@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,400;1,500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  background-image: url("image//back1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+}
+img{
+    height: 130px;
+}
+/* form */
+form {
+  background-color: #CCBA78;
+  box-shadow: 0 2px 5px rgpa(0, 0, 0.3);
+  padding: 20px 30px;
+  height: 430px;
+  border-radius: 100px 0px;
+  margin-top: 7em;
+  
+}
+.form label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .form input {
+    border: 1px solid #000000;
+    background-color: #CCBA78;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 12em;
+  }
+  .namemarque {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 12px;
+  }
+  .prixdate{
+  display: flex;
+  gap: 35px;
+  margin-bottom: 12px;
+  }
+  .typepromotion{
+    display: flex;
+    margin-bottom: 8px;
+    }
+  h2 {
+    font-size: 27px;
+    padding-left: 25%;
+    font-style: italic;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    color:#141416;
+  }
+  .form select{
+    border: 1px solid #000000;
+    background-color: #CCBA78;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 14px;
+    width: 81%;
+  }
+
+  #btn{
+    color: #ffffff;
+    background: #141416;
+    padding: 10px 80px;
+    margin-top: 25px;
+    border-radius: 4px;
+    margin-left: 25%;
+    border: none;
+  }
+  /* table */
+  td ,th {
+  background-color: #CCBA78;
+    color: #000000;
+    padding: 8px;
+    text-align: left;
+ }
+ table{
+    border-collapse: collapse;
+    margin-top: 7em;
+    border: 1px solid black;
+    min-width: 400px;
+    margin-left: 5em;
+ }
+ table .list{
+  width: 100%;
+ }
+ /* small */
+ .form small {
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+.form.error input {
+  border-color: red;
+}
+.form.success input {
+  border-color: green;
+}
+.form.error small {
+    color: red;
+    visibility: visible;
+  }
+  .form.success small {
+    visibility: visible;
+    color: green;
+  }
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* / Float cancel and delete buttons / */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 30%;
+  gap: 5em;
+}
+/* / cancel button / */
+.cancelbtn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* /delete button / */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* / Add padding and center-align text to the container / */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* / The Modal / */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 300px;
+  top: 113px;
+  width: 50%;
+  height: 60%; 
+  overflow: auto; 
+  background-color: #000000;
+  padding-top: 50px;
+margin-left: 33%;
+}
+
+/* / Modal Content/Box / */
+.modal-content {
+  background-color: #CCBA78;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 60%;
+  height: 70%;
+}
+
+
+/* Close Button  */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+  
